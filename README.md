@@ -6,5 +6,5 @@ __page contain 3 buttons__:
     2. visiButton --> to go the website.
     3. deleteButton --> to delete the bookmark.   
  
- you can visit from https://mahmoud305.github.io/junior_bookmark-/ - automatic!
+ you can visit from
  [HERE](https://mahmoud305.github.io/junior_bookmark-/) .
