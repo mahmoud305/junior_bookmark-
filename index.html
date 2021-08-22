@@ -1,0 +1,60 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Home Page</title>
+</head>
+
+<body>
+
+    <!-- background-image: linear-gradient(rgb(238, 238, 238), rgb(255, 255, 255)); -->
+    <section class="my-3">
+        <div class="container">
+            <div class="px-5">
+                <h2 class="my-5 fw-bolder bookMarkerHeader">Bookmarker</h2>
+            </div>
+            <div class="bookmarkBody  position-relative ">
+                <div class="bookmarkDetails m-3 text-center p-5">
+                    <h2 class="">Bookmark your favorite sites</h2>
+                    <p class="fw-bold mt-4">Site Name</p>
+                    <input id="bookmarkName" type="text" class="form-control w-75 m-auto mb-3 p-1" placeholder="Bookmark Name">
+                    <div id="nameError"  class="d-none  w-75   m-auto fs-5 ">
+                        <p class="errormessage p-0 form-control py-1 fw-bolder "> bookmark Name is Required</p>
+                    </div>
+                    <p  class="fw-bold">Site URL</p>
+                    <input type="text" id="bookmarkURL" class="form-control w-75 m-auto mb-3 p-1" placeholder="Website URL">
+                    <div class="  w-75  d-none  m-auto fs-5 " id="urlError">
+                        <p class="errormessage p-0 form-control py-1 fw-bolder "> bookmark URL is Required</p>
+                    </div>
+                    <div>
+                        <button class="btn btn-primary myBtn " onclick="addBookmark()" >Submit</button>
+                    </div>
+                </div>
+
+
+                <div id="bookmarkList" class="bookmarksList container p-0">
+                    <div class="row bookmarkRow   m-3">
+                        <div class="bookmarkItem col-xl-6 col-lg-7   col-md-8  p-5 d-flex justify-content-between">
+                            <h3> youTube</h3>
+                          
+                            <div>
+                             
+                                <a href="" target="_blank" class="btn btn-primary myBtn mx-2">Visit</a>
+                                <button onclick="deleteBookmark()" class="btn btn-danger myBtn mx-2">Delete</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
